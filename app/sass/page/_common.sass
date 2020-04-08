@@ -1,0 +1,134 @@
+.d-flex
+	display: flex
+	flex-wrap: wrap
+.show
+	display: block
+.title
+	position: relative
+	color: #009ee0
+	font-family: $font-second
+	font-size: 36px
+	font-weight: 900
+	text-transform: uppercase
+	text-align: center
+	display: flex
+	justify-content: center
+	margin: 50px 0
+	&-m
+		margin-bottom: 50px
+		margin-top: 50px
+	&:before
+		position: absolute
+		content: ''
+		width: 200px
+		margin: 0 auto
+		height: 2px
+		background-color: #f7c052
+		bottom: -10px
+.title-one
+	font-size: 19px
+	text-align: center
+	font-family: $font-second
+  font-weight: 900
+  font-size: 56px
+  line-height: 62px
+  color: $second-accent
+.title-content
+	font-family: $font-second
+	margin-bottom: 30px
+	line-height: 45px
+	font-size: 36px
+.menu.active
+	display: block
+	left: 0
+.dropdown-2.active
+	display: flex
+.breadcrumbs
+	margin-top: 15px
+	font-size: 13px
+	color: #bfbfbf
+	// padding-bottom: 12px
+	// border-bottom: 1px solid #f0f0f0
+	margin-bottom: 40px
+	a
+		color: #bfbfbf
+		&:hover
+			color: $second-accent
+.beeadscrumbs
+	margin-bottom: 40px
+.owl-stage
+	width: 650px
+.development
+	height: 650px
+	margin: 0 auto
+	padding: 50px 0
+	&__text
+		font-size: 56px
+		font-weight: 900
+		text-align: center
+		color: #041677
+
+.pagination
+	display: flex
+	margin-left: auto
+	margin-right: 0
+	justify-content: flex-end
+	margin-top: 45px
+	&__list
+		display: flex
+		li
+			@include shadow
+			width: 35px
+			height: 35px
+			line-height: 35px
+			text-align: center
+			border-radius: 5px
+			padding-top: 1px
+			margin: 0 5px
+			background-color: #fff
+			@include ease
+			&.pagination__dot
+				color: $first-accent
+				font-size: 22px
+				box-shadow: none
+				background-color: #f5f5f5
+				&:hover
+					transform: none
+					box-shadow: none
+			&:hover
+				@include hover 
+			&.active
+				background-color: $first-accent
+				a
+					color: #fff
+			a
+				display: block
+				color: $first-accent
+	&-button
+		width: 35px
+		height: 35px
+		cursor: pointer
+		&_prev
+			background: url($uri+'icons/visual/prev.svg') center center no-repeat
+		&_next
+			background: url($uri+'icons/visual/next.svg') center center no-repeat
+.author
+	background-color: #fff
+	margin: 15px 0 30px
+	display: inline-block
+	@include shadow
+	padding: 10px 20px
+	border-radius: 5px
+	font-size: 14px
+
+// Таблица
+
+table
+	margin: 25px auto
+	border: 1px solid #bfbfbf
+	border-radius: 5px
+	p
+		margin: 0
+td
+	padding: 10px 15px
+	border: 1px solid #bfbfbf

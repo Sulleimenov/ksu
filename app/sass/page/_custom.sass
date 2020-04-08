@@ -1,0 +1,40 @@
+.page-content
+  p
+    margin-bottom: 20px
+    line-height: 1.6
+  h2
+    font-size: 32px
+  h2,h3,h4,h5,h6
+    margin-bottom: 32px
+  ol
+    margin-top: 32px
+    margin-bottom: 32px
+    padding-left: 40px
+    li 
+      line-height: 1.6
+      p
+        margin: 0
+  >ul
+    margin-top: 32px
+    margin-bottom: 32px
+    padding-left: 40px
+    >li
+      position: relative
+      line-height: 1.6
+      &:before
+        content: ''
+        position: absolute
+        width: 5px
+        height: 5px
+        border-radius: 50%
+        left: -20px
+        top: 9px
+        background-color: $first-accent
+      a
+        text-decoration: underline
+      p
+        margin: 0
+  blockquote
+    box-shadow: inset 3px 0 0 0 rgba(0, 0, 0, 0.84)
+    padding-left: 23px
+    font-style: italic

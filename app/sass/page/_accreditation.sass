@@ -1,0 +1,95 @@
+.accreditation
+	font-size: 14px
+	width: 100%
+	&__img
+		background: #fff
+		box-shadow: 0 4px 7px 1px rgba(0, 0, 0, 0.09)
+		border-radius: 10px
+		width: 64px
+		height: 50px
+		display: flex
+		align-items: center
+		justify-content: center
+		&_l
+			margin-left: 20px
+		&_r
+			margin-right: 20px
+	&__content
+		&_left
+			text-align: right
+		&_right
+	&__item
+		display: flex
+		align-items: center
+		justify-content: flex-end
+		margin-bottom: 27px
+		height: 50px
+		&:last-child
+			margin-bottom: 0
+		&_r
+			display: flex
+			flex-direction: row-reverse
+	&__text
+		line-height: 22px
+	.d-flex
+		justify-content: center
+.article
+	margin: 80px 0
+	background-color: #f0f0f0
+	background: #f0f0f0 url($uri+'accreditation.png') 100px center no-repeat
+	width: 100%
+	padding: 80px 0
+	line-height: 22px
+	&-bg
+.accreditation-cart
+	border-radius: 3px
+	background: #f0f0f0
+	padding: 30px 20px
+	height: 341px
+	margin-bottom: 30px
+	box-shadow: 0 4px 7px 1px rgba(0, 0, 0, 0.09)
+	&__title
+		font-weight: 700
+		margin-bottom: 49px
+		text-align: center
+		text-transform: uppercase
+	&__text
+		font-size: 13px
+		margin-top: 49px
+		line-height: 21px
+		text-align: center
+		span
+			color: #009ee0
+	&__img
+		display: flex
+		align-items: center
+		height: 83px
+		img
+			display: block
+			margin: 0 auto
+.certificate
+	&__item
+		border: 10px solid #f0f0f0
+		border-radius: 3px
+.owl-prev
+	position: absolute
+	left: -30px
+	top: 175px
+.owl-next
+	position: absolute
+	right: -30px
+	top: 175px
+.owl-dots
+	margin-top: 50px
+	display: flex
+	justify-content: center
+.owl-carousel button.owl-dot
+	outline: none
+	width: 9px
+	height: 9px
+	margin: 0 2px
+	border-radius: 50%
+	background: #fff
+	border: 1px solid #009ee0
+.owl-carousel button.owl-dot.active
+	background: #009ee0

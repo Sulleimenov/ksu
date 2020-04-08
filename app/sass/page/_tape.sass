@@ -1,0 +1,92 @@
+.tape
+  &__title
+    font-size: 36px
+    margin-bottom: 40px
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+  &__date
+    text-align: center
+    margin-right: 15px
+    color: $first-accent
+  &__item
+    border-radius: 5px
+    @include shadow
+    width: 49%
+    margin-bottom: 20px
+    padding: 13px 20px
+    background-color: #fff
+    display: flex
+    line-height: 20px
+    align-items: center
+    cursor: pointer
+    @include ease
+    transition: box-shadow 300ms ease, transform 300ms ease
+    overflow: hidden
+    text-overflow: ellipsis
+    &:hover
+      @include hover
+      color: #212121
+.template
+  margin-top: 50px
+  position: relative
+  min-height: 800px
+  &-content
+    padding: 0 20px
+    margin-top: 42px
+    line-height: 20px
+    p
+      line-height: 20px
+      margin-bottom: 14px
+    ul
+      padding-left: 20px
+      li
+        list-style-type: disc
+        margin: 4px 0
+    h2,h3,h4,h5,h6
+      line-height: 30px
+      margin-top: 42px
+      margin-bottom: 25px
+.sidebar
+  margin-top: 42px
+  background-color: #fff
+  border-radius: 5px
+  width: 350px
+  height: 600px
+  overflow-Y: auto
+  @include shadow
+  padding: 20px 35px
+  &__list
+    li
+      a
+        display: block
+        padding: 10px 0
+    border-bottom: 2px solid $second-accent
+    padding-bottom: 25px
+  &__download
+    margin-top: 15px
+    line-height: 20px
+    &_not
+      color: #bfbfbf
+      text-align: center
+      font-size: 18px
+  &__wrapper
+    text-align: center
+  &__plus
+    display: none
+.word, .pdf, .prezi, .excel
+  padding: 5px 0 5px 40px
+  display: block
+.word
+  background: url($uri+'icons/visual/word.svg') center left no-repeat
+  background-size: 28px
+.pdf
+  background: url($uri+'icons/visual/pdf.svg') center left no-repeat
+  background-size: 28px
+.excel
+  background: url($uri+'icons/visual/excel.svg') center left no-repeat
+  background-size: 28px
+.prezi
+  background: url($uri+'icons/visual/powerpoint.svg') center left no-repeat
+  background-size: 28px

@@ -1,0 +1,41 @@
+.target__wrapper_h
+  height: 566px
+.nii
+  &-text
+  &-img
+    width: 100%
+    height: 100%
+    background: url($uri+'icons/nii/bg.svg') center center no-repeat
+  &-research
+    margin-top: 123px
+    &__title
+      font-weight: 700
+      margin-bottom: 37px
+    &__item
+      @include shadow
+      background: url($uri+'/icons/nii/list.svg') center left 24px no-repeat
+      padding: 0 15px 0 75px
+      width: 100%
+      height: 55px
+      border-radius: 5px
+      display: flex
+      align-items: center
+      margin-bottom: 30px
+
+.nii-list
+  display: flex
+  justify-content: space-between
+  border-radius: 5px
+  overflow: hidden
+  @include shadow
+  background-color: #fff
+  margin-bottom: 40px
+  &__item
+    width: 33%
+    text-align: center
+    height: 55px
+    line-height: 55px
+    cursor: pointer
+    &.active
+      background-color: $first-accent
+      color: #fff

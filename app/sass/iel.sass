@@ -1,0 +1,59 @@
+$colornt: #9268b6
+$uri: '../img/'
+
+.nav__item
+  &:nth-child(1)
+    background-color: rgba(#fff, 0.2)
+    position: relative
+    &::before 
+      z-index: 5
+      content: ''
+      position: absolute
+      right: -12px
+      top: 50%
+      transform: translateY(-50%)
+      width: 10px
+      height: 10px
+      border: 6px solid transparent
+      border-left: 6px solid rgba(#fff, 0.6)
+  &:nth-child(2)
+    background: none
+    background-color: darken($colornt, 0)
+  &:nth-child(3)
+    background-color: darken($colornt, 2.5%)
+  &:nth-child(4)
+    background-color: darken($colornt, 5%)
+  &:nth-child(5)
+    background-color: darken($colornt, 7.5%)
+  &:nth-child(6)
+    background-color: darken($colornt, 10%)
+  &:nth-child(7)
+    background-color: darken($colornt, 12.5%)
+  &:last-child
+    background-image: none
+    border-radius: 0 3px 3px 0
+
+.nav > .nav__item:nth-child(2) .dropdown
+  background-color: darken($colornt, 0)
+.nav > .nav__item:nth-child(3) .dropdown
+	background-color: darken($colornt, 2.5%)
+.nav > .nav__item:nth-child(4) .dropdown
+	background-color: darken($colornt, 5%)
+.nav > .nav__item:nth-child(5) .dropdown
+	background-color: darken($colornt, 7.5%)
+.nav > .nav__item:nth-child(6) .dropdown
+	background-color: darken($colornt, 10%)
+.nav > .nav__item:nth-child(7) .dropdown
+	background-color: darken($colornt, 12.5%)
+
+.header
+  position: relative
+  &::before
+    content: ''
+    position: absolute
+    background: url($uri+'overlay_pattern-ati.png') center
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    background-size: 4px

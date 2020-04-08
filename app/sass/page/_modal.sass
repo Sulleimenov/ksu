@@ -1,0 +1,301 @@
+.marquee
+	margin-bottom: 20px
+	background-color: #ff2b42
+	padding: 10px 0
+	border-radius: 4px
+	font-size: 21px
+	a
+		color: #fff
+
+.video-engineer
+	padding: 0
+	border-radius: 5px
+	width: 850px
+	height: 480px
+	overflow: hidden
+	background-color: #000
+
+.covid-modal
+	width: 950px
+	min-height: 700px
+	background-color: #d4d4d4
+	position: relative
+	color: #000
+	padding: 60px 60px 60px 190px
+	border-radius: 4px
+	cursor: default
+	display: flex
+	&::after
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: url($uri+'window/covid/bg.jpg') 0 0 no-repeat
+		background-size: cover
+		opacity: 0.20
+	&-list
+		position: absolute
+		left: 0
+		z-index: 1
+		&__item
+			width: 150px
+			height: 38px
+			background-color: #fff
+			color: #494949
+			padding-left: 15px
+			padding-top: 1px
+			line-height: 38px
+			margin-bottom: 11px
+			border-top-right-radius: 20px
+			border-bottom-right-radius: 20px
+			font-weight: 700
+			cursor: pointer
+			&.active
+				background-color: #d34937
+				color: #fff
+	&__content
+		position: relative
+		z-index: 1
+
+.dn
+	display: none!important
+
+.covid
+	display: none
+	&.active
+		display: block
+	&__title
+		display: inline-block
+		border-radius: 10px
+		background-color: #d34937
+		padding: 15px 10px 10px 10px
+		font-size: 36px
+		font-weight: 700
+		color: #fff
+	h3
+		margin-top: 30px
+		margin-bottom: 20px
+		font-size: 21px
+	p
+		margin-bottom: 10px
+
+.prevention
+	display: none
+	&.active
+		display: block
+	h3
+		margin-bottom: 20px
+	&__next
+		margin-top: 30px
+	ul
+		li
+			list-style-type: disc
+			margin-bottom: 10px
+			line-height: 20px
+
+.symptoms
+	display: none
+	flex-wrap: wrap
+	&.active
+		display: flex
+	h3
+		display: block
+		width: 100%
+		margin-top: 30px
+		margin-bottom: 30px
+		font-size: 21px
+	&-item
+		margin-right: 50px
+		width: 110px
+		margin-bottom: 30px
+		&:last-child
+			margin-right: 0
+		&__img
+			display: flex
+			align-items: center
+			justify-content: center
+			border-radius: 50%
+			background-color: #fff
+			width: 60px
+			height: 60px
+			margin: 0 auto
+			img
+				width: 36px
+		&__title
+			margin-top: 14px
+			text-align: center
+
+
+
+
+.call-center
+	height: 28px
+	line-height: 28px
+	padding: 1px 10px 0 10px
+	background: #fff url($uri+'window/call-center.svg') 0 0 no-repeat
+	border-radius: 20px
+	color: #fe6846
+	&:hover
+		background-color: #fff
+		color: #000
+
+.call-modal
+	width: 850px
+	min-height: 550px
+	padding: 0
+	overflow: hidden
+	font-family: 'Montserrat', sans-serif
+	position: relative
+	border-radius: 4px
+	background: #fff url($uri+'window/call-woman.png') top 105px left no-repeat
+	&__link
+		display: flex
+		flex-direction: row-reverse
+		padding-right: 100px
+		margin-top: 40px
+		position: relative
+		z-index: 1
+		img
+			width: 35px
+		a
+			display: block
+			margin-left: 25px
+			&:last-child
+				margin-left: 0
+	&__list
+		padding-top: 60px
+		padding-left: 250px
+		padding-right: 90px
+		position: relative
+		z-index: 1
+		li
+			margin-bottom: 25px
+			font-weight: 700
+			line-height: 20px
+			color: #00709d
+			&:last-child
+				margin-bottom: 0
+			a
+				color: #d34937
+				font-weight: 900
+				transition: all 0.3
+				&:hover
+					color: #e86f5f
+	&__phone
+		margin-top: 35px
+		color: #fe6846
+		text-transform: uppercase
+		text-align: center
+		padding-left: 262px
+		padding-right: 68px
+		font-weight: 500
+		a
+			color: #fe6846
+	&__logo
+		position: absolute
+		left: 60px
+		bottom: 28px
+		z-index: 1
+		img
+			width: 96px
+	&__bg-top
+		position: absolute
+		top: -194px
+		right: -214px
+	&__bg-bottom
+		position: absolute
+		bottom: -120px
+		left: -26px
+		width: 1000px
+
+
+@media (max-width: 992px)
+	.call-center
+		width: 28px
+		border: 1px solid #fff
+		background: url($uri+'window/call-center.svg') center center no-repeat
+		background-size: 20px
+		span
+			display: none
+
+@media (max-width: 768px)
+	.call-modal
+		background-image: none
+		padding-bottom: 30px
+		&__bg-bottom
+			display: none
+		&__logo
+			top: 30px
+			left: 50%
+			margin-left: -50px
+		&__list
+			padding: 20px
+			padding-top: 150px
+			text-align: center
+			position: relative
+			z-index: 1
+			a
+				display: block
+	.covid-modal
+		padding: 20px
+		padding-top: 0
+		h3
+			font-size: 18px
+		p
+			font-size: 15px
+	.covid__title
+		font-size: 21px
+	.covid-modal-list
+		display: flex
+		position: relative
+		top: 60px
+		margin-bottom: 80px
+	.covid-modal-list__item
+		margin: 0 2px
+		border-radius: 20px
+		max-width: 130px
+		text-align: center
+		padding-left: 0
+
+
+	.call-modal__text
+		padding: 0 40px
+		font-size: 16px
+		line-height: auto
+		&--ru
+			margin-top: 150px
+	.call-modal__phone
+		padding: 0 40px
+		font-size: 16px
+		line-height: auto
+
+	.call-center
+		position: absolute
+		top: 2px
+		left: 93px
+		border: none
+		display: flex
+		align-items: center
+		background-size: 20px
+		img
+			width: 15px
+			padding: 0
+
+@media (max-width: 576px)
+	.call-modal__text,
+	.call-modal__phone
+		font-size: 14px
+	.call-center
+		position: absolute
+		top: 2px
+		left: 93px
+		border: none
+		display: flex
+		align-items: center
+		img
+			width: 15px
+			padding: 0
+	.video-engineer
+		height: 250px
