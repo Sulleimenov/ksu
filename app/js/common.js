@@ -78,7 +78,7 @@ $(document).ready(function() {
   function syncPosition(el) {
     $owl_slider = $(this).data('owl.carousel');
     var loop = $owl_slider.options.loop;
-  
+
     if(loop){
       var count = el.item.count-1;
       var current = Math.round(el.item.index - (el.item.count/2) - .5);
@@ -98,7 +98,7 @@ $(document).ready(function() {
     if (!thumbnailCurrentItem.hasClass('active')) {
       var duration = 300;
       sync2.trigger('to.owl.carousel',[current, duration, true]);
-    }   
+    }
   }
   var thumbs = sync2.owlCarousel({
     animateOut: "fadeOut",
@@ -134,7 +134,7 @@ $(document).ready(function() {
 
 
 
-  
+
   $(".sidebar__list>p>a").click(function() {
     $("html, body").animate({
        scrollTop: $($(this).attr("href")).offset().top + "px"
@@ -319,7 +319,7 @@ $(document).ready(function() {
       }
     }
 	});
-	
+
 	$(".target-functions__item").owlCarousel({
     animateOut: "fadeOut",
     loop: false,
@@ -389,7 +389,23 @@ $(document).ready(function() {
       }
     }
   });
-	
+
+
+  //Слайдер в шапке
+  $(".content__title").owlCarousel({
+    animateOut: "fadeOut",
+    loop: false,
+    margin: 0,
+    items: 1,
+    nav: false,
+		dots: true,
+    smartSpeed: 450,
+    navText: [
+      "<img src='/templates/ksu/img/icons/slider/arrow-sprite.svg' alt='left'>",
+      "<img src='/templates/ksu/img/icons/slider/arrow-sprite.svg' alt='right'>"
+    ],
+  });
+
   $('[data-fancybox="certificate"]').fancybox({
     buttons: ["close"],
     modal: false,
