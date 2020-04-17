@@ -219,7 +219,7 @@ $(document).ready(function() {
         nav: false
       },
       412: {
-        items: 2,
+        items: 1,
         dots: false,
         nav: false
       },

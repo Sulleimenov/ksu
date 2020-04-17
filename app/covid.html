@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Проект</title>
+	<link rel="icon" href="/templates/ksu/img/favicon.png">
+	<link rel="stylesheet" href="libs/bootstrap-grid/dist/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="libs/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="libs/owl-carousel/owl.theme.default.min.css">
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:500,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__top">
+				<div class="header__social">
+					<a href="#" class="header__social__link"><img src="/templates/ksu/img/icons/social/vk.svg" alt="vk"></a>
+					<a href="#" class="header__social__link"><img src="/templates/ksu/img/icons/social/instagram.svg" alt="instagram"></a>
+					<a href="#" class="header__social__link"><img src="/templates/ksu/img/icons/social/youtube.svg" alt="youtube"></a>
+					<a href="#" class="header__social__link"><img src="/templates/ksu/img/icons/social/phone.svg" alt="call"></a>
+					<a data-fancybox data-src="#callModal" href="javascript:;" class="call-center"><span>Call-центр</span></a>
+				</div>
+				<div class="header-nav">
+					<div class="header__burger">
+						<span></span>
+					</div>
+					<a href="#" class="header-nav__item header-nav__item_portal">Портал</a>
+					<a href="#" class="header-nav__item header-nav__item_rector">Блог ректора</a>
+					<div class="header-nav__item header-nav__item_cabinet">
+						Личный кабинет
+						<div class="dropdown-cab">
+							<a href="#">Cтудента/магистранта</a>
+							<a href="#">Преподавателя</a>
+							<a href="#">Эдвайзера</a>
+						</div>
+					</div>
+					<div class="header-nav__item header-nav__item_search">
+						<img src="/templates/ksu/img/icons/white-search.svg" alt="Поиск">
+					</div>
+					<div class="header-nav__item header-nav__item_lang">
+						Ru
+						<div class="dropdown-lang">
+							<a href="#">Kz</a>e
+							<a href="#">En</a>
+						</div>
+					</div>
+				</div>
+				<div class="header-nav-mobile">
+					<div class="header__burger">
+						<span></span>
+					</div>
+					<div class="header-nav-mobile__left">
+						<div class="header-nav__item header-nav__item_cabinet">
+							<img src="templates/ksu/img/icons/user.svg" alt="">
+							<div class="dropdown-cab">
+								<a href="#">Cтудента/магистранта</a>
+								<a href="#">Преподавателя</a>
+								<a href="#">Эдвайзера</a>
+							</div>
+						</div>
+						<a href="/" class="header-nav__item header-nav__item_logo">
+							<img src="templates/ksu/img/logo.png" alt="KSU">
+						</a>
+					</div>
+					<div class="header-nav-mobile__right">
+						<div class="header-nav__item header-nav__item_search">
+							<img src="/templates/ksu/img/icons/white-search.svg" alt="Поиск">
+						</div>
+						<div class="header-nav__item header-nav__item_lang">RU</div>
+					</div>
+				</div>
+			</div>
+			<div class="menu">
+				<ul class="nav">
+					<li class="nav__item">
+						<a href="/" class="nav__item_link"><img src="/templates/ksu/img/logo.png" alt="logo"></a>
+					</li>
+					<li class="nav__item">
+						<div class="nav__item__title">О КГУ</div>
+						<ul class="dropdown">
+							<li class="dropdown__item"><a href="#" class="dropdown__item_link">1</a></li>
+							<li class="dropdown__item"><a href="#" class="dropdown__item_link">2</a></li>
+							<li class="dropdown__item"><a href="#" class="dropdown__item_link">Миссия и цели</a></li>
+							<li class="dropdown__item"><a href="#" class="dropdown__item_link">Миссия и цели</a></li>
+							<li class="dropdown__item"><a href="#" class="dropdown__item_link">Миссия и цели</a></li>
+							<li class="dropdown__item"><a href="#" class="dropdown__item_link">Миссия и цели</a></li>
+						</ul>
+					</li>
+					<li class="nav__item">
+						<div class="nav__item__title">Образовательная деятельность</div>
+						<ul class="dropdown">
+							<li class="dropdown__item"><a href="#" class="dropdown__item_link">Миссия и цели</a></li>
+							<li class="dropdown__item"><a href="#" class="dropdown__item_link">Миссия и цели</a></li>
+							<li class="dropdown__item"><a href="#" class="dropdown__item_link">Миссия и цели</a></li>
+							<li class="dropdown__item"><a href="#" class="dropdown__item_link">Миссия и цели</a></li>
+							<li class="dropdown__item"><a href="#" class="dropdown__item_link">Миссия и цели</a></li>
+							<li class="dropdown__item"><a href="#" class="dropdown__item_link">Миссия и цели</a></li>
+						</ul>
+					</li>
+					<li class="nav__item">
+						<div class="nav__item__title">Наука<br> и иновации</div>
+						<ul class="dropdown">
+							<li class="dropdown__item"><a href="#" class="dropdown__item_link">Миссия и цели</a></li>
+							<li class="dropdown__item"><a href="#" class="dropdown__item_link">Миссия и цели</a></li>
+							<li class="dropdown__item"><a href="#" class="dropdown__item_link">Миссия и цели</a></li>
+							<li class="dropdown__item"><a href="#" class="dropdown__item_link">Миссия и цели</a></li>
+							<li class="dropdown__item"><a href="#" class="dropdown__item_link">Миссия и цели</a></li>
+							<li class="dropdown__item"><a href="#" class="dropdown__item_link">Миссия и цели</a></li>
+						</ul>
+					</li>
+					<li class="nav__item">
+						<div class="nav__item__title">Сотрудничество</div>
+						<ul class="dropdown">
+							<li class="dropdown__item"><a href="#" class="dropdown__item_link">Миссия и цели</a></li>
+							<li class="dropdown__item"><a href="#" class="dropdown__item_link">Миссия и цели</a></li>
+							<li class="dropdown__item"><a href="#" class="dropdown__item_link">Миссия и цели</a></li>
+							<li class="dropdown__item"><a href="#" class="dropdown__item_link">Миссия и цели</a></li>
+							<li class="dropdown__item"><a href="#" class="dropdown__item_link">Миссия и цели</a></li>
+							<li class="dropdown__item"><a href="#" class="dropdown__item_link">Миссия и цели</a></li>
+						</ul>
+					</li>
+					<li class="nav__item">
+						<div class="nav__item__title">Студенческая жизнь</div>
+						<ul class="dropdown">
+							<li class="dropdown__item"><a href="#" class="dropdown__item_link">Миссия и цели</a></li>
+							<li class="dropdown__item"><a href="#" class="dropdown__item_link">Миссия и цели</a></li>
+							<li class="dropdown__item"><a href="#" class="dropdown__item_link">Миссия и цели</a></li>
+							<li class="dropdown__item"><a href="#" class="dropdown__item_link">Миссия и цели</a></li>
+							<li class="dropdown__item"><a href="#" class="dropdown__item_link">Миссия и цели</a></li>
+							<li class="dropdown__item"><a href="#" class="dropdown__item_link">Миссия и цели</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="nav-mobile">
+					<ul id="accordion" class="accordion">
+						<li>
+							<div class="link link-bg">Web Design<img src="/templates/ksu/img/icons/down.svg" alt="down"></div>
+							<ul class="submenu">
+								<li><a href="#">Photoshop</a></li>
+								<li><a href="#">HTML</a></li>
+								<li><a href="#">CSS</a></li>
+							</ul>
+						</li>
+						<li>
+							<div class="link link-bg">Coding<img src="/templates/ksu/img/icons/down.svg" alt="down"></div>
+							<ul class="submenu">
+								<li><a href="#">Javascript</a></li>
+								<li><a href="#">jQuery</a></li>
+								<li><a href="#">Ruby</a></li>
+							</ul>
+						</li>
+						<li>
+							<div class="link link-bg">Devices<img src="/templates/ksu/img/icons/down.svg" alt="down"></div>
+							<ul class="submenu">
+								<li><a href="#">Tablet</a></li>
+								<li><a href="#">Mobile</a></li>
+								<li><a href="#">Desktop</a></li>
+							</ul>
+						</li>
+						<li>
+							<div class="link link-bg">Global<img src="/templates/ksu/img/icons/down.svg" alt="down"></div>
+							<ul class="submenu">
+								<li><a href="#">Google</a></li>
+								<li><a href="#">Bing</a></li>
+								<li><a href="#">Yahoo</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="mission-header">
+					Генерация знаний, подготовка нового<br>
+					поколения успешных людей в условиях<br>
+					глобализации
+				</div>
+			</div>
+			<div class="content">
+				<div class="owl-carousel content__title">
+					<div>Университет имени<br> Ахмета Байтурсынова</div>
+					<div><a href="#">Covid-19</a></div>
+				</div>
+				<div class="header-news">
+					<div class="header-news__ticker">
+						<ul id="webTicker">
+							<li><a href="#">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</a></li>
+							<li><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, similique!</a></li>
+							<li><a href="#">564654564564654654564654564654654654654654654654654564654654654654654654</a></li>
+						</ul>
+					</div>
+					<div class="header-news__wrapper">
+						<div class="owl-carousel header-news__item">
+							<a href="#" class="link_white">
+								<div class="header-news__latest">
+									<div class="header-news__img" style="background: url(templates/ksu/img/news.jpg) center center / cover;">
+										<div class="header-news__date">
+											18.11.2019
+										</div>
+									</div>
+									<div class="header-news__title">
+										Наш магистрант стал
+										обладателем стипендии
+										Фонда Первого
+										Президента Республики
+										Казахстан — Елбасы
+									</div>
+									<div class="header-news__more">
+										Подробнее
+									</div>
+								</div>
+							</a>
+							<a href="#" class="link_white">
+								<div class="header-news__latest">
+									<div class="header-news__img">
+										<img src="" alt="">
+										<div class="header-news__date">
+											18.11.2019
+										</div>
+									</div>
+									<div class="header-news__title">
+										Наш магистрант стал
+										обладателем стипендии
+										Фонда Первого
+										Президента Республики
+										Казахстан — Елбасы
+									</div>
+									<div class="header-news__more">
+										Подробнее
+									</div>
+								</div>
+							</a>
+							<a href="#" class="link_white">
+								<div class="header-news__latest">
+									<div class="header-news__img">
+										<img src="" alt="">
+										<div class="header-news__date">
+											18.11.2019
+										</div>
+									</div>
+									<div class="header-news__title">
+										Наш магистрант стал
+										обладателем стипендии
+										Фонда Первого
+										Президента Республики
+										Казахстан — Елбасы
+									</div>
+									<div class="header-news__more">
+										Подробнее
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="header-news__button">
+							<a href="#">Еще новости</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+  <div class="covid-wrapper">
+    <div class="covid-head">
+      <div class="covid-head__title">Сovid-19</div>
+      <div class="covid-head__img">
+        <img src="./templates/ksu/img/covid/bg-head.svg" alt="Covid">
+      </div>
+    </div>
+		<div class="covid-text">
+			<p>Дорогие друзья!</p>
+			<p>На этой странице мы собрали для вас всю актуальную информацию по ситуации вокруг эпидемиологической ситуации, связанной с распространением коронавирусной инфекции</p>
+			<p>Берегите себя!</p>
+			<h3>Что такое коронавирус?</h3>
+			<p>Коронавирусы — это большое семейство вирусов, которые приводят к заболеваниям органов дыхания. Чаще всего — без тяжёлых симптомов. Всего насчитывается около 40 видов коронавируса. Пандемию вызвал SARS-CoV-2, который впервые был обнаружен в Китае в конце декабря</p>
+			<p>Считается, что инкубационный период нового коронавируса — до 14 дней. Всё это время человек может быть носителем вируса, но не подозревать об этом. Именно поэтому стоит соблюдать двухнедельный карантин, если вы вернулись из страны, где много случаев заражения, или контактировали с заболевшим</p>
+		</div>
+		<div class="covid-video">
+			<iframe width="350" height="200" src="https://www.youtube.com/embed/5IRRVrnkEj4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe width="350" height="200" src="https://www.youtube.com/embed/vZOlVGwdU6c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<div class="covid-text">
+			<h3>Как распространяется новый коронавирус?</h3>
+			<p>Коронавирус передаётся от человека к человеку при близком контакте с больным — чаще всего с такими симптомами, как кашель и чихание. Учёные продолжают исследовать, как долго вирус может сохранять жизнеспособность на предметах. Однако речь про небольшие промежутки времени — так что письма и посылки не опасны для людей</p>
+		</div>
+		<div class="symptom">
+			<div class="symptom__first">
+				<h4 class="symptom__title">Первичные симптомы</h4>
+				<div class="symptom__list">
+					<div class="symptom__item">
+						<div class="symptom__img">
+							<img src="./templates/ksu/img/covid/1.svg" alt="svg">
+						</div>
+						<div class="symptom__name">
+							Насморк
+						</div>
+					</div>
+					<div class="symptom__item">
+						<div class="symptom__img">
+							<img src="./templates/ksu/img/covid/2.svg" alt="svg">
+						</div>
+						<div class="symptom__name">
+							Боль в горле
+						</div>
+					</div>
+					<div class="symptom__item">
+						<div class="symptom__img">
+							<img src="./templates/ksu/img/covid/3.svg" alt="svg">
+						</div>
+						<div class="symptom__name">
+							Сухой кашель
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="symptom__second">
+				<h4 class="symptom__title">Вторичные симптомы</h4>
+				<div class="symptom__list">
+					<div class="symptom__item">
+						<div class="symptom__img">
+							<img src="./templates/ksu/img/covid/1.svg" alt="svg">
+						</div>
+						<div class="symptom__name">
+							Насморк
+						</div>
+					</div>
+					<div class="symptom__item">
+						<div class="symptom__img">
+							<img src="./templates/ksu/img/covid/2.svg" alt="svg">
+						</div>
+						<div class="symptom__name">
+							Боль в горле
+						</div>
+					</div>
+					<div class="symptom__item">
+						<div class="symptom__img">
+							<img src="./templates/ksu/img/covid/3.svg" alt="svg">
+						</div>
+						<div class="symptom__name">
+							Сухой кашель
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="covid-text">
+			<p>Если вы обнаружили у себя похожие симптомы — вызовите врача. Это не значит, что у вас вирус, но будет полезным провериться</p>
+			<p>Если в течение последних двух недель вы посещали страны, где зафиксировано много случаев коронавирусной инфекции, или контактировали с кем-то, кто был в таких странах, к симптомам стоит отнестись максимально внимательно. Не стоит идти в больницу или поликлинику — высок риск заразить окружающих</p>
+		</div>
+		<div class="covid-contact">
+			<h4 class="covid-contact__title">Контакты</h4>
+			<div class="covid-contact__wrapper">
+				<div class="covid-contact__item">
+					<a data-fancybox data-src="#callModaltwo" href="javascript:;">
+						<div class="covid-contact__img">
+							<img src="/templates/ksu/img/covid/call-center.svg" alt="call-center">
+						</div>
+						<div class="covid-contact__title">
+							Call-Центр
+						</div>
+					</a>
+				</div>
+				<div class="covid-contact__item">
+					<a href="http://portal.ksu.edu.kz/rector_blog/">
+						<div class="covid-contact__img">
+							<img src="./templates/ksu/img/covid/blog.svg" alt="call-center">
+						</div>
+						<div class="covid-contact__title">
+							Блог ректора
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+  </div>
+
+	<div class="modal-search"></div>
+	<div class="modal-search_wrapper">
+		<div class="modal-search_inner">
+			<img src="/templates/ksu/img/icons/search.svg" class="modal-search_img" alt="Поиск">
+			<input type="text" placeholder="Поиск..." class="modal-search_input">
+			<div class="modal-search_close">
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+	</div>
+	<div style="display: none;" class="call-modal" id="callModal">
+		<div class="call-modal__logo"><img src="templates/ksu/img/window/logo.png" alt="KSU"></div>
+		<div class="call-modal__bg-top"><img src="templates/ksu/img/window/bg-top.png" alt="elem1"></div>
+		<ul class="call-modal__list">
+			<li>В целях оперативного решения вопросов по обучению в дистанционном формате необходимо обращаться в Call-центр: <a href="tel:87142931010">8(7142)93-10-10</a></li>
+			<li>Центр методологической поддержки: <a href="tel:87142511120">8(7142)51-11-20</a></li>
+			<li>Центр технической поддержки: <a href="tel:87142390190">8(7142)39-01-90</a></li>
+			<li>В целях оперативного решения вопросов по учебной работе: <a href="tel:87142511100">8(7142)51-11-00</a></li>
+			<li>По вопросам дистанционного обучения: <a href="tel:87142390630">8(7142)39-06-30</a></li>
+			<li>Центр психологии и инклюзивного образования:  <a href="tel:87772760674">8(777)276-06-74</a></li>
+		</ul>
+		<div class="call-modal__link">
+			<a href="https://www.facebook.com/%D0%9A%D0%93%D0%A3-%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8-%D0%90%D1%85%D0%BC%D0%B5%D1%82%D0%B0-%D0%91%D0%B0%D0%B9%D1%82%D1%83%D1%80%D1%81%D1%8B%D0%BD%D0%BE%D0%B2%D0%B0-%D0%98%D0%BD%D1%81%D1%82%D0%B8%D1%82%D1%83%D1%82-%D0%B4%D0%B8%D1%81%D1%82%D0%B0%D0%BD%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B8-%D0%9F%D0%A0-100112951376605/?ti=as"><img src="templates/ksu/img/window/002-facebook.svg" alt="facebook"></a>
+			<a href="https://www.instagram.com/institut_kgu/?igshid=odfce469ty7r"><img src="templates/ksu/img/window/001-instagram.svg" alt="instagram"></a>
+		</div>
+		<div class="call-modal__bg-bottom"><img src="templates/ksu/img/window/bg-bottom.png" alt="elem2"></div>
+	</div>
+	<div style="display: none;" class="covid-modal" id="covidModal">
+		<ul class="covid-modal-list">
+			<li class="covid-modal-list__item covid-modal-list__item--1">
+				Covid-19
+			</li>
+			<li class="covid-modal-list__item covid-modal-list__item--2">
+				Симптомы
+			</li>
+			<li class="covid-modal-list__item covid-modal-list__item--3">
+				Профилактика
+			</li>
+		</ul>
+		<div class="covid-modal__content">
+			<div class="covid active">
+				<div class="covid__title">Оповещение о COVID-19</div>
+				<h3>Что такое коронавирус?</h3>
+				<p>Коронавирусы — это большое семейство вирусов, которые приводят к заболеваниям органов дыхания. Чаще всего — без тяжёлых симптомов. Всего насчитывается около 40 видов коронавируса. Пандемию вызвал SARS-CoV-2, который впервые был обнаружен в Китае в конце декабря.</p>
+				<p>Считается, что инкубационный период нового коронавируса — до 14 дней. Всё это время человек может быть носителем вируса, но не подозревать об этом. Именно поэтому стоит соблюдать двухнедельный карантин, если вы вернулись из страны, где много случаев заражения, или контактировали с заболевшим.</p>
+				<h3>Как распространяется новый коронавирус?</h3>
+				<p>Коронавирус передаётся от человека к человеку при близком контакте с больным — чаще всего с такими симптомами, как кашель и чихание. Учёные продолжают исследовать, как долго вирус может сохранять жизнеспособность на предметах. Однако речь про небольшие промежутки времени — так что письма и посылки не опасны для людей.</p>
+			</div>
+			<div class="symptoms">
+				<h3>Первичные симптомы</h3>
+				<div class="symptoms-item">
+					<div class="symptoms-item__img">
+						<img src="templates/ksu/img/window/covid/icon/1.svg" alt="">
+					</div>
+					<div class="symptoms-item__title">
+						Насморк
+					</div>
+				</div>
+				<div class="symptoms-item">
+					<div class="symptoms-item__img">
+						<img src="templates/ksu/img/window/covid/icon/cough.svg" alt="">
+					</div>
+					<div class="symptoms-item__title">
+						Сухой кашель
+					</div>
+				</div>
+				<div class="symptoms-item">
+					<div class="symptoms-item__img">
+						<img src="templates/ksu/img/window/covid/icon/sore-throat.svg" alt="">
+					</div>
+					<div class="symptoms-item__title">
+						Боль в горле
+					</div>
+				</div>
+				<h3>Вторичные симптомы</h3>
+				<div class="symptoms-item">
+					<div class="symptoms-item__img">
+						<img src="templates/ksu/img/window/covid/icon/symptoms.svg" alt="">
+					</div>
+					<div class="symptoms-item__title">
+						Температура
+					</div>
+				</div>
+				<div class="symptoms-item">
+					<div class="symptoms-item__img">
+						<img src="templates/ksu/img/window/covid/icon/pneumonia.svg" alt="">
+					</div>
+					<div class="symptoms-item__title">
+						Пневмания
+					</div>
+				</div>
+				<div class="symptoms-item">
+					<div class="symptoms-item__img">
+						<img src="templates/ksu/img/window/covid/icon/breath.svg" alt="">
+					</div>
+					<div class="symptoms-item__title">
+						Удушение
+					</div>
+				</div>
+				<p>Если вы обнаружили у себя похожие симптомы — вызовите врача. Это не значит, что у вас вирус, но будет полезным провериться.</p>
+				<p>Если в течение последних двух недель вы посещали страны, где зафиксировано много случаев коронавирусной инфекции, или контактировали с кем-то, кто был в таких странах, к симптомам стоит отнестись максимально внимательно. Не стоит идти в больницу или поликлинику — высок риск заразить окружающих.</p>
+			</div>
+			<div class="prevention">
+				<h3>7 шагов по профилактике коронавирусной инфекции</h3>
+				<ul>
+					<li>Воздержитесь от посещения общественных мест: торговых центров, спортивных и зрелищных мероприятий, транспорта в час пик.</li>
+					<li>Не касайтесь грязными руками глаз, лица и рта.</li>
+					<li>Избегайте близких контактов и пребывания в одном помещении с людьми, имеющими видимые признаки ОРВИ (кашель, чихание, выделения из носа).</li>
+					<li>Мойте руки с мылом и водой тщательно после возвращения с улицы, контактов с посторонними людьми.</li>
+					<li>Дезинфицируйте гаджеты, оргтехнику и поверхности, к которым прикасаетесь.</li>
+					<li>Ограничьте по возможности при приветствии тесные объятия и рукопожатия.</li>
+					<li>Пользуйтесь только индивидуальными предметами личной гигиены (полотенце, зубная щетка).</li>
+				</ul>
+				<h3 class="prevention__next">Какие меры по профилактике коронавируса существуют?</h3>
+				<p>Самое важное, что можно сделать, чтобы защитить себя, – это соблюдать правила личной гигиены и сократить посещения общественных и людных мест.</p>
+				<ul>
+					<li>Держите руки в чистоте, часто мойте их водой с мылом или используйте дезинфицирующее средство.</li>
+					<li>Старайтесь не касаться рта, носа или глаз немытыми руками (обычно такие прикосновения неосознанно совершаются нами в среднем 15 раз в час).</li>
+					<li>Старайтесь не касаться рта, носа или глаз немытыми руками (обычно такие прикосновения неосознанно совершаются нами в среднем 15 раз в час).</li>
+					<li>На работе регулярно очищайте поверхности и устройства, к которым вы прикасаетесь (клавиатура компьютера, панели оргтехники общего использования, экран смартфона, пульты, дверные ручки и поручни).</li>
+					<li>Носите с собой одноразовые салфетки и всегда прикрывайте нос и рот, когда вы кашляете или чихаете.</li>
+					<li>Не ешьте еду (орешки, чипсы, печенье и другие снеки) из общих упаковок или посуды, если другие люди погружали в них свои пальцы.</li>
+					<li>Объясните детям, как распространяются микробы и почему важна хорошая гигиена рук и лица. Расскажите детям о профилактике коронавируса.</li>
+					<li>Часто проветривайте помещения.</li>
+					<li>По возможности, соблюдайте дистанцию не менее 1 метра при общении с коллегами, друзьями, родными и близкими</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="libs/webticker/jquery.webticker.min.js"></script>
+	<script src="libs/owl-carousel/owl.carousel.min.js"></script>
+	<script src="libs/fancybox/jquery.fancybox.min.js"></script>
+	<script type="text/javascript">
+		function covid() {
+			$("#covid-modal").click();
+		}
+		// setTimeout(covid, 500);
+	</script>
+	<script src="js/common.js"></script>
+</body>
+
+</html>

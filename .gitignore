@@ -1,2 +1,4 @@
 node_modules/
+php/
 package-lock.json
+.ftpconfig
