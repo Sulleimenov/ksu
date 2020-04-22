@@ -394,16 +394,14 @@ $(document).ready(function() {
   //Слайдер в шапке
   $(".content__title").owlCarousel({
     animateOut: "fadeOut",
+    animateIn: "fadeIn",
+    autoplay: true,
     loop: false,
     margin: 0,
     items: 1,
     nav: false,
 		dots: true,
-    smartSpeed: 450,
-    navText: [
-      "<img src='/templates/ksu/img/icons/slider/arrow-sprite.svg' alt='left'>",
-      "<img src='/templates/ksu/img/icons/slider/arrow-sprite.svg' alt='right'>"
-    ],
+    smartSpeed: 700,
   });
 
   $('[data-fancybox="certificate"]').fancybox({
