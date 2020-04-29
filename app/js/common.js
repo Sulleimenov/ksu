@@ -5,6 +5,12 @@ $(document).ready(function() {
     $("body").toggleClass("lock");
   });
 
+  $('div.dep-tabs').on('click', 'div:not(.active)', function() {
+    $(this)
+      .addClass('active').siblings().removeClass('active')
+      .closest('.slider-dep__content-sync__item').find('.dep-tabs__block').removeClass('active').eq($(this).index()).addClass('active');
+  });
+
   var navbar =  $('.sidebar');  // navigation block
   var wrapper = $('.template');        // may be: navbar.parent();
 
@@ -44,12 +50,6 @@ $(document).ready(function() {
           }
         }
       );
-  });
-
-  //================================= Кафедры tabs
-  $(".dep-tabs__item").click(function() {
-    $(".dep-tabs__item").removeClass("show");
-    $(this).addClass("show");
   });
 
   var hashLinks = document.querySelectorAll("a[href^='#']");
@@ -404,6 +404,7 @@ $(document).ready(function() {
     smartSpeed: 700,
   });
 
+  //Актредитация
   $('[data-fancybox="certificate"]').fancybox({
     buttons: ["close"],
     modal: false,
@@ -423,4 +424,6 @@ $(document).ready(function() {
     arrows: false,
     transitionDuration: 300
   });
+  
+
 });
