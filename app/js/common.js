@@ -72,7 +72,7 @@ $(document).ready(function() {
     loop: false,
     margin: 30,
     center: true,
-    nav: true,
+    nav: false,
     dots: false
   }).on('changed.owl.carousel', syncPosition);
   function syncPosition(el) {
